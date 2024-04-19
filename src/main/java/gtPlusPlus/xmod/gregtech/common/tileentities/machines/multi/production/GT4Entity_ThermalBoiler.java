@@ -313,7 +313,7 @@ public class GT4Entity_ThermalBoiler extends GregtechMeta_MultiBlockBase<GT4Enti
                     .addElement(
                             'C',
                             buildHatchAdder(GT4Entity_ThermalBoiler.class)
-                                    .atLeast(InputBus, OutputBus, InputHatch, OutputHatch, Maintenance, Energy, Muffler)
+                                    .atLeast(InputBus, OutputBus, InputHatch, OutputHatch, Maintenance, Muffler)
                                     .casingIndex(TAE.getIndexFromPage(0, 1)).dot(1).buildAndChain(
                                             onElementPass(x -> ++x.mCasing, ofBlock(ModBlocks.blockCasings2Misc, 11))))
                     .build();
